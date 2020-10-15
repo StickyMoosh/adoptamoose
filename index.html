@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Century Gothic;}
+body {
+  background-color: #995830;  
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #3f2211;
+  background-color: #874a28;
+}
+
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+
+.tab button:hover {
+  background-color: #6b310e;
+}
+
+
+.tab button.active {
+  background-color: #59280b;
+}
+
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+<style>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  background-image: url("https://static1.fjcdn.com/comments/The+most+dangerous+animal+in+finland+is+moose+not+because+_2101401cb94435247439025c03b4b376.jpg");
+
+  height: 100%; 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-text { 
+  color: black;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center
+}
+</style>
+<style>
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+</style>
+</head>
+<body>  
+<h1 style="text-align:center;">Adopt a Moose!</h1>
+  
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Home')">Home</button>
+  <button class="tablinks" onclick="openCity(event, 'Pricing')">Pricing</button>
+  <button class="tablinks" onclick="openCity(event, 'Safety')">Safety</button>
+  <button class="tablinks" onclick="openCity(event, 'Order')">Order</button>
+  <button class="tablinks" onclick="openCity(event, 'About')">About</button>
+</div>
+
+<div id="Home" class="tabcontent">
+  <div style="text-align:center">
+    <h2>MooseCorp's</h2>
+    <h1 style="font-size:50px">Adopt a Moose</h1>
+    <p>We all love moose. It's about time we have moose love us.</p>
+  </div>
+  <img src="data:image/jpeg;base64,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" alt="A cute moose on the ground" class="center">
+</div>
+  
+<div id="Pricing" class="tabcontent">
+  <h2 style="text-align:center;">Pricing</h2>
+  <h2 style="text-align:center;">There are 4 plans you can get for adoption-</h2>
+  <ol>
+    <h2 style="color:#e87c3a; text-align:center">Bronze</h3>
+	  <ul>
+	    <li>Instructions</li>
+	    <li>1 Week of food</li>
+	    <li>Harness, leash, kennel, and antler polish not included(otherwise $74.99)</li>
+	    <li><strong>$139.99</strong></li>
+	  </ul>
+    <h2 style="color:#7c7c7c; text-align:center">Silver</h3>
+	  <ul>
+	    <li>Instructions</li>
+	    <li>3 Weeks of food</li>
+	    <li>Harness+leash</li>
+	    <li>Kennel and antler polish not included(otherwise $49.99)</li>
+	    <li><strong>$189.99</strong></li>
+	  </ul>
+	<h2 style="color:#fcce02; text-align:center">Gold</h3></li>
+	  <ul>
+	    <li>Instructions</li>
+	    <li>1 Month of food</li>
+	    <li>Harness+leash</li>
+	    <li>Kennel</li>
+	    <li>Antler polish</li>
+	    <li><strong>$229.99</strong></li>
+	  </ul>
+	<h2 style="color:#498fff; text-align:center">Diamond</h3></li>
+	  <ul>
+	    <li>Instructions</li>
+		<li>3 Months of food</li>
+		<li>Harness+leash</li>
+		<li>Kennel</li>
+		<li>Antler polish</li>
+		<li><strong>BONUS!</strong> 2 sets of Moose Clothes(Design chosen at random)</li>
+		<li><strong>$269.99</strong></li>
+	  </ul> 	
+	</ol>
+    <h2 style="text-align:center;">The moose is included in all plans</h2>
+	<img src="https://media2.giphy.com/media/WaChgRogtw6n6/giphy.gif" alt="Moose playing" width="335.5" height="400" class="center">
+</div>
+
+<div id="Safety" class="tabcontent">
+  <h2>Safety</h2>
+  <p>While moose <strong>are</strong> adorable, there are many safety guidelines that apply to moose owners.</p>
+  <ol>
+    <li>Don't leave it cooped up in one place for too long.</li>
+	<li>Give it food and water 4 times a day, and if it starts snorting, give it a snack.</li>
+	<li>Steer clear of the antlers. They may not look sharp, but you wouldn't want to get poked!</li>
+	<li>Make sure to replace its hoof-guard once a month. Otherwise, the hooves could tear up carpets and plants</li>
+	<li>Give it a comfortable amount of space. The kennel provided with the Gold and Platinum should suffice for several hours and sleep, but be sure to take it out every once in a while.</li>
+	<li>The most important thing with owning a moose is that you <strong>love</strong> it. Moose are gentle, and if you love it, it will love you.</li>
+  </ol>
+  <img src="https://media.giphy.com/media/I1CWNnxheIVB6/giphy.gif" alt="A baby moose and its mother">
+</div>
+
+<div id="Order" class="tabcontent">
+  <h2>Order</h2>
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe3WRWyzv-Bd_b0lBwBmYIlBM8ahPjHePY5P_jDN6mG_IkDVg/viewform?embedded=true" width="640" height="2242" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+  <img src="moosebox.png" alt="A moose box at your door" width="450" height="299.7">
+</div>
+
+<div id="About" class="tabcontent">
+  <h2>About MooseCorp</h2>
+  <p>MooseCorp was founded in 219 by Naman Mishra with the purpose of showing people the love between mankind and moosekind.</p>
+  <div class="center">
+    <h3>"If you have not ever known the love between a human and moose, your life has not yet been completed." -William Shakespeare</h3>  
+  </div>
+  <p>Although there are many other corporations that offer to help you adopt a certain animal, we are the only one founded on <strong>love</strong>. There are lots of things we do to ensure that your moose is at its kindest, calmest, and most lovable form. Some examples are-</p>
+  <ol>
+    <li>Always treating our moose with the most love and respect we can</li>
+    <li>Following all of our safety guidelines</li>
+    <li>Raising them in large, wide enclosures that simulate their natural habitat</li>
+    <li>Never separating families</li>
+    <li>Vaccinating them to make sure they are always healthy</li>
+  </ol>
+  <p>We hope that, passing this moose onto you, we are giving it a life equal, if not better, than the life it has lived so far.</p>  
+  <img src="https://latimesblogs.latimes.com/.a/6a00d8341c630a53ef0134810d4b0b970c-600wi" alt="Two adorable moose cuddling" width="450" height="299.5">
+</div> 
+ 
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+</script>
+</body>
+</html> 
